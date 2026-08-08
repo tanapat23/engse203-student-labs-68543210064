@@ -2,15 +2,12 @@
 
 ## ผู้จัดทำ
 
-- ชื่อ–นามสกุล: ศิลวัต อาซอง
-- รหัสนักศึกษา: 68543210070-7
+- ชื่อ–นามสกุล: ธนภัทร ชัยทอง
+- รหัสนักศึกษา: 68543210064-0
 - Section: SEC-2
 
 ## URLs
 
-- Repository: https://github.com/sinrawat/engse203-student-labs-68543210070-7
-- Pull Request: https://github.com/sinrawat/engse203-student-labs-68543210070-7/pull/4
-- GitHub Pages: https://sinrawat.github.io/engse203-student-labs-68543210070-7/
 
 ## Component Tree
 

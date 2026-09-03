@@ -20,6 +20,7 @@ function DashboardPage() {
   const [searchText, setSearchText] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [notice, setNotice] = useState('');
+  const normalizedSearchText = searchText.trim().toLowerCase();
 
   useEffect(() => {
     let ignore = false;
@@ -50,7 +51,7 @@ function DashboardPage() {
     completed: requests.filter((request) => request.status === 'completed').length,
   }), [requests]);
 
-  const normalizedSearchText = searchText.trim().toLowerCase();
+
   const filteredRequests = requests.filter((request) => {
     const matchesStatus = statusFilter === 'all' || request.status === statusFilter;
     const matchesSearch = !normalizedSearchText

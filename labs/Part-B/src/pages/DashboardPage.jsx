@@ -118,8 +118,11 @@ function DashboardPage() {
               onChange={(event) => setSearchText(event.target.value)}
               aria-label="ค้นหาจากประเภทหรือสถานที่"
             />
-            {/* TODO B3: ส่ง onAcknowledge={handleAcknowledge} ให้ RequestList เพื่อให้การ์ด pending มีปุ่ม "รับเรื่อง" */}
-            <RequestList requests={filteredRequests} onDeleteRequest={handleDelete} />
+            {filteredRequests.length === 0 && normalizedSearchText ? (
+              <p className="subtle-empty">ไม่พบคำร้องที่ตรงกับการค้นหา</p>
+            ) : (
+              <RequestList requests={filteredRequests} onDeleteRequest={handleDelete} />
+            )}
           </section>
         </>
       )}
